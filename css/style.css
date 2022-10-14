@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "�q���M�m�p�S Pro W3", "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*header---------------------------------*/
+
+.header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #ffff;
+    z-index: 100;
+}
+.inner {
+    width: 60%;
+    height:100%;
+    margin: 0 auto;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.header li+li {
+    margin-left: 10%;
+}
+
+.header li a {
+    text-decoration: none;
+    color:#000;
+}
+
+.header li a:hover {
+    text-decoration: none;
+    color:#65FF27;
+}
+
+.main {
+    padding-top: 60px;
+    background-color: #FEFFF0;
+}
+
+/*sec01-------------------------*/
+.sec01 {
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sec01 .prof {
+    display: inline-block;
+    padding: 60px 10px 0px;
+}
+
+.sec01 h2{
+    font-size: 60px;
+    color:#65FF27;
+}
+
+.sec01 p{
+    font-size: 24px;
+    color:#65FF27;
+
+}
+
+.sec01 .img1-container {
+    display: inline-block;
+    padding: 70px 10px;
+}
+
+.sec01 .img1 {
+    height: 200px;
+}
+
+
+
+/*sec02-------------------------*/
+.sec02 {
+    padding: 0px 0px 50px;
+}
+
+.mtitle {
+    display: flex;
+	align-items: center;
+    padding-top: 65px;
+    margin-top: -65px;
+}
+
+.mtitle:after {
+	content: "";
+	flex-grow: 1;
+	height: 1px;
+	display: block;
+
+}
+
+.mtitle:after {
+	margin-left: .4em;
+	border-top: 3px dotted #444;
+}
+
+
+.title {
+    margin: 0;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.news-list {
+    list-style: none outside;
+    margin:0;
+    padding:0;
+}
+
+.news-list .item a {
+    display:flex;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color:#333;
+    border-bottom:1px solid rgb(218, 243, 190);
+    padding: 20px 5px;
+}
+
+.news-list .item .date {
+    display: inline-block;
+    margin:0;
+    font-size:16px;
+    min-width: 140px;
+    color: #999;
+    padding: 20px 20px 0 0;
+}
+
+.news-list .item .category {
+    display: inline-block;
+    margin: 0;
+    min-width: 140px;
+    padding: 20px 20px 0 0;
+}
+
+.news-list .item .category span {
+    background: #999;
+    color:#fff;
+    text-align: center;   
+    padding: 1px 20px;
+    font-size: 12px;
+}
+
+.news-list .item .content {
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom:1px solid rgb(218, 243, 190);
+}
+
+/*sec03-------------------------*/
+.sec03 {
+    margin-bottom: 60px;
+}
+
+.category {
+    text-align: center;
+    font-size: 25px;
+    margin: 15px 0 15px 0;
+}
+
+.movie-inner {
+    width: 70%;
+    margin:30px auto 20px;
+}
+
+.movie-title {
+    text-align: center;
+    background-color: #a7ec8c;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.movie1 {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/*sec04-------------------------*/
+.sec04 {
+    margin-bottom: 60px;
+}
+
+/*sec05-------------------------*/
+.sec05 {
+    height: 400px;
+}
+
+/*sec06-------------------------*/
+.sec06 {
+    height: 400px;
+}
+
+
+/*responsive--------------------*/
+@media (max-width: 610px) {
+    .inner {
+        width: 70%;
+    }
+    
+    .sec01 {
+        height: 250px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .sec01 h2 {
+        font-size: 34px;
+    }
+
+    .sec01 p {
+        font-size: 20px;
+    }
+
+    .sec01 .img1 {
+        height: 100px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .news-list .item .date {
+        font-size: 14px;
+        min-width: 140px;
+        padding: 5px 0px 0 0;
+    }
+
+    .news-list .item .category {
+        min-width: 60px;
+        padding: 5px 5px 0 0;
+    }
+
+    .news-list .item .category span {
+        font-size: 10px;
+    }
+
+    .news-list .item .content {
+        font-size: 12px;
+        padding: 7px 0;
+    }
+
+    .category {
+        font-size: 15px;
+    }
+
+    .movie-inner {
+        margin: 16px auto 20px;
+    }
+
+    .movie-title {
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+
