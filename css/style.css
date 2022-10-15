@@ -121,15 +121,29 @@ input, select {
     margin: 0 auto;
 }
 
-.header nav ul {
+.headerinner {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .top {
+    padding: 5px 0;
+}
+
+.header .toplogo {
+    width: 50px;
+}
+
+
+.header ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     padding-top: 20px;
 }
 
 .header li+li {
-    margin-left: 10%;
+    margin-left: 25px;
 }
 
 .header li a {
@@ -157,7 +171,6 @@ input, select {
 }
 
 .sec01 .prof {
-    display: inline-block;
     padding: 60px 10px 0px;
 }
 
@@ -173,7 +186,6 @@ input, select {
 }
 
 .sec01 .img1-container {
-    display: inline-block;
     padding: 70px 10px;
 }
 
@@ -195,12 +207,16 @@ input, select {
     margin-top: -65px;
 }
 
+.title {
+    margin: 0;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
 .mtitle:after {
 	content: "";
 	flex-grow: 1;
 	height: 1px;
-	display: block;
-
 }
 
 .mtitle:after {
@@ -209,27 +225,14 @@ input, select {
 }
 
 
-.title {
-    margin: 0;
-    font-size: 20px;
-    padding-right: 10px;
-}
+
 
 .news-list {
-    list-style: none outside;
+    list-style: none;
     margin:0;
     padding:0;
 }
 
-.news-list .item a {
-    display:flex;
-    flex-wrap: wrap;
-    flex-wrap: nowrap;
-    text-decoration: none;
-    color:#333;
-    border-bottom:1px solid rgb(218, 243, 190);
-    padding: 20px 5px;
-}
 
 .news-list .item .date {
     display: inline-block;
@@ -240,20 +243,23 @@ input, select {
     padding: 20px 20px 0 0;
 }
 
-.news-list .item .category {
+.news-list .item .kind {
     display: inline-block;
     margin: 0;
-    min-width: 140px;
-    padding: 20px 20px 0 0;
+    min-width: 100px;
+    margin: 20px 20px 0 0;
+    text-align: center;
+    background-color: #999;
+    color: #fff;
 }
 
-.news-list .item .category span {
+/* .news-list .item .kind span {
     background: #999;
     color:#fff;
     text-align: center;   
     padding: 1px 20px;
     font-size: 12px;
-}
+} */
 
 .news-list .item .content {
     font-size: 14px;
@@ -268,7 +274,7 @@ input, select {
 
 .category {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin: 15px 0 15px 0;
 }
 
@@ -306,7 +312,21 @@ input, select {
 }
 
 
-/*responsive--------------------*/
+/*footer------------------------*/
+.footer {
+    height: 50px;
+    text-align: right;
+}
+
+.footer p {
+    padding: 20px 0 0;
+    font-size: 8px;
+}
+
+
+
+
+/*responsive-------------------------------*/
 @media (max-width: 610px) {
     .inner {
         width: 70%;
