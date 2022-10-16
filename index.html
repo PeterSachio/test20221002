@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter private page</title>
+    <title>Peter slow life</title>
     
     <!-- CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -19,7 +19,6 @@
                     </a>
                 </div>
                 <div class="menu">
-                    <!-- <nav> -->
                         <ul>
                             <li><a href="#sec002">NEWS</a></li>
                             <li><a href="#sec003">LIKE</a></li>
@@ -27,20 +26,36 @@
                             <li><a href="#sec005">SNS</a></li>
                             <li><a href="#sec006">PHOTO</a></li>
                         </ul>
-                    <!-- </nav> -->
+                </div>
+
+                <div class="menu-sp">
+                    <button class="burger-btn"><!-- ③ハンバーガーボタン -->
+                        <span class="bar bar_top"></span>
+                        <span class="bar bar_mid"></span>
+                        <span class="bar bar_bottom"></span>
+                    </button>
                 </div>
                 
             </div>
             
         </div>       
     </header><!--/ header-->
+    <div class="menu-splist">
+        <ul>
+            <li><a href="#sec002" class="burger-btn-list">NEWS</a></li>
+            <li><a href="#sec003" class="burger-btn-list">LIKE</a></li>
+            <li><a href="#sec004" class="burger-btn-list">ART</a></li>
+            <li><a href="#sec005" class="burger-btn-list">SNS</a></li>
+            <li><a href="#sec006" class="burger-btn-list">PHOTO</a></li>
+        </ul>
+    </div>
     <main class="main">
         
         <div class="inner">
             <section class="sec01" id="sec001">
                     <div class="prof">                
                         <h2>Peter</h2>
-                        <p>Private time</p>
+                        <p>slow life</p>
                     </div>
                     <div class="img1-container"><img class="img1" src="images/img3.jpg" alt=""></div>
                     <!-- <div class="img2-container"><img class="img2" src="images/img1.jpg" alt=""></div>            -->
@@ -129,6 +144,21 @@
         </div>
     </footer>
 
+
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('.burger-btn').on('click', function () {
+                $('.burger-btn').toggleClass('close');
+                $('.menu-splist').toggleClass('open');
+            });
+
+            $('.burger-btn-list').on('click', function () {
+                $('.burger-btn').toggleClass('close');
+                $('.menu-splist').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 </html>
