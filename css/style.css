@@ -135,6 +135,9 @@ input, select {
     width: 50px;
 }
 
+.menu-sp {
+    display:none;
+}
 
 .header ul {
     list-style: none;
@@ -155,6 +158,10 @@ input, select {
     text-decoration: none;
     color:#65FF27;
 }
+
+
+
+/*main--------------------------*/
 
 .main {
     padding-top: 60px;
@@ -324,12 +331,122 @@ input, select {
 }
 
 
+/* menu-splist */
+
+.menu-splist {
+    display:none;
+}
 
 
 /*responsive-------------------------------*/
 @media (max-width: 610px) {
     .inner {
         width: 70%;
+    }
+
+    .header .inner {
+        width:90%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-sp {
+        display: inline-block;
+        margin: 10px 0;
+    }
+    
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        color: inherit;
+        cursor: pointer;
+        font: inherit;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        vertical-align: middle;
+    }
+    
+
+    .burger-btn{
+        display: block;      
+        width: 39px;      
+        height: 39px;      
+        position: relative;      
+        z-index: 3;
+        border:none;    
+    }
+    
+    .bar{      
+    width: 20px;      
+    height: 1px;        
+    display: block;      
+    position: absolute;      
+    left: 50%;      
+    transform: translateX(-50%);    
+    background-color: #999;    
+    }    
+    .bar_top{   
+    top: 10px;
+    }
+    .bar_mid{    
+    top: 50%;
+    transform: translate(-50%,-50%);
+    }
+    .bar_bottom{
+    bottom: 10px;
+    }
+
+    .burger-btn.close .bar_top {
+        transform: translate(-50%,10px) rotate(45deg);      
+        transition: transform .3s;
+    }
+
+    .burger-btn.close .bar_mid {
+        display: none;
+    }
+
+    .burger-btn.close .bar_bottom {
+        transform: translate(-50%,-8px) rotate(-45deg);      
+        transition: transform .3s;
+    }
+
+   
+    .menu-splist.open {
+        display: inline-block;
+        position: fixed;
+        top:60px;
+        height: calc(100% - 60px);
+        width: 100%;
+        background-color: #ffff;
+        z-index: 100;
+        opacity:0.9;
+        text-align: center;
+        padding:auto 0:
+    }
+
+    .menu-splist.open ul {
+        flex-flow: column;
+    }
+
+    .menu-splist.open li{
+        padding:20px 0 20px;
+    }
+
+    .menu-splist.open li a{
+        text-decoration: none;
+        color:#000;
+    }
+    
+    .menu-splist.open li a:hover {
+        text-decoration: none;
+        color:#65FF27;
     }
     
     .sec01 {
@@ -388,6 +505,8 @@ input, select {
     .movie-title {
         font-size: 15px;
     }
+
+
 
 
 }
