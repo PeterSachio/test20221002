@@ -418,8 +418,8 @@ input, select {
     }
 
    
-    .menu-splist.open {
-        display: inline-block;
+    .menu-splist {
+        /* display: inline-block; */
         position: fixed;
         top:60px;
         height: calc(100% - 60px);
@@ -431,20 +431,20 @@ input, select {
         padding:auto 0:
     }
 
-    .menu-splist.open ul {
+    .menu-splist ul {
         flex-flow: column;
     }
 
-    .menu-splist.open li{
+    .menu-splist li{
         padding:20px 0 20px;
     }
 
-    .menu-splist.open li a{
+    .menu-splist li a{
         text-decoration: none;
         color:#000;
     }
     
-    .menu-splist.open li a:hover {
+    .menu-splist li a:hover {
         text-decoration: none;
         color:#65FF27;
     }
