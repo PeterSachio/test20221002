@@ -151,12 +151,12 @@
         $(function () {
             $('.burger-btn').on('click', function () {
                 $('.burger-btn').toggleClass('close');
-                $('.menu-splist').toggleClass('open');
+                $('.menu-splist').slideToggle();
             });
 
             $('.burger-btn-list').on('click', function () {
                 $('.burger-btn').toggleClass('close');
-                $('.menu-splist').toggleClass('open');
+                $('.menu-splist').fadeToggle();
             });
         });
     </script>
