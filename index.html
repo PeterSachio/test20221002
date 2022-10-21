@@ -1,3 +1,13 @@
+<!-- slickの高さがレスポンシブにならない 20221020-->
+<!-- jsについて理解不足？　-->
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +17,8 @@
     <title>Peter slow life</title>
     
     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -68,6 +80,13 @@
                 </div>
                 <ul class="news-list">
                     <li class="item">
+                        <p class="date">2022/10/21</p>
+                        <p class="kind">M-1</p>
+                        <p class="content">黒帯さんの３回戦は10/26祇園に決まりました。
+                            <a href="https://www.m-1gp.com/schedule/detail.html?id=525">→MORE</a>
+                        </p>
+                    </li>
+                    <li class="item">
                         <!-- <a href="#"></a> -->
                         <p class="date">2022/10/13</p>
                         <p class="kind">UPDATE</p>
@@ -98,15 +117,66 @@
                 <div class="movie-inner">
                     <h4 class="movie-title">黒帯</h4>
                     <div class="movie1">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Vc71i4jGL1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <ul class="horizontal-list">
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/Vc71i4jGL1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/STKvJUmPKzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/MrEIgLHd_l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/Cxe34HtfAlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/IAuTffMmqMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/_xUUT5ytU6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                        </ul>
                     </div>
+                    
                 </div>
+
                 <div class="movie-inner">
                     <h4 class="movie-title">ニューヨーク</h4>
                     <div class="movie1">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yu-SLPcNtwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <ul class="horizontal-list">
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/iL7lePjR10U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/klOsyPhgHOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/yu-SLPcNtwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/kewEGa82doE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/3yKRJbB4U-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/ivo8ev1XV1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
+                <h3 class="category">MUSIC</h3>
+                <div class="movie-inner">
+                    <h4 class="movie-title">chelmico</h4>
+                    <div class="movie1">
+                        <ul class="horizontal-list">
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/wq6A3sihFkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/76sNmqMzUuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/P7ds78eOLjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/7GMVtF0Bhuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/tflBLxwCWb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                            <li class="movie-item"><iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/4gQ0ALMOkBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
             </section>
 
             <section class="sec04" id="sec004">
@@ -117,7 +187,7 @@
                 <div class="movie-inner">
                     <h4 class="movie-title">Amazing Grace</h4>
                     <div class="movie1">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mx7x9Mi68sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="youtube" width="100%" height="100%" data-src="https://www.youtube.com/embed/mx7x9Mi68sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
@@ -125,12 +195,36 @@
             <section class="sec05" id="sec005">
                 <div class="mtitle">
                     <h4 class="title">▶ SNS</h4>
+
                 </div>
+                <h3 class="category">TWITTER</h3>
+                <div class="movie-inner">
+                    <div class="sns-box">
+                        <a class="twitter-timeline" height="500px" href="https://twitter.com/Aike_Chemistry?ref_src=twsrc%5Etfw">Tweets by Aike_Chemistry</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+                
             </section>
 
             <section class="sec06" id="sec006">
                 <div class="mtitle">
                     <h4 class="title">▶ PHOTO</h4>
+                </div>
+
+                <div class="img-right-container">
+                    <img src="images/photo1.jpg" alt="" class="img-right">
+                </div>
+
+                <div class="img-left-container">
+                    <img src="images/photo2.jpg" alt="" class="img-left">
+                </div>
+
+                <div class="img-right-container">
+                    <img src="images/photo3.jpg" alt="" class="img-right">
+                </div>
+                
+                <div class="img-left-container">
+                    <img src="images/photo4.jpg" alt="" class="img-left">
                 </div>
             </section>
         </div>
@@ -146,8 +240,10 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
+
+        
         $(function () {
             $('.burger-btn').on('click', function () {
                 $('.burger-btn').toggleClass('close');
@@ -159,6 +255,35 @@
                 $('.menu-splist').fadeToggle();
             });
         });
+
+        function youtube_defer() {
+            var iframes = document.querySelectorAll('.youtube');
+            iframes.forEach(function(iframe){
+            if(iframe.getAttribute('data-src')) {
+                iframe.setAttribute('src',iframe.getAttribute('data-src'));
+            }
+            });
+        }
+        window.addEventListener('load', youtube_defer);
+
+
+        
     </script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.horizontal-list').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            // fade: true,
+            cssEase: 'linear',
+            adaptiveHeight: true,
+        });
+        });
+    </script>
+
 </body>
 </html>
