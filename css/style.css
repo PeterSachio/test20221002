@@ -303,6 +303,10 @@ input, select {
     aspect-ratio: 16/9;
 }
 
+.samne {
+    width: 100%
+}
+
 li.movie-item {
     display: inline-block;
     scroll-snap-align: start;
