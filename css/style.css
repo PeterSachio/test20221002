@@ -304,7 +304,13 @@ input, select {
 }
 
 .samne {
-    width: 100%
+    width: 100%;
+    transition-duration: 0.5s; 
+}
+
+.samne:hover{
+    opacity: 0.6;
+    transition-duration: 0.5s;  
 }
 
 li.movie-item {
@@ -316,7 +322,7 @@ li.movie-item {
 
 .slick-arrow {
     height: 100%;
-    width: 1rem;
+    width: 2rem;
     transform: translate(0, 0);
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -326,8 +332,15 @@ li.movie-item {
 }
 
 .slick-next {
-left: auto;
-right: 0;
+    left: auto;
+    right: 0;
+}
+
+.slick-next:hover {
+    background-color:#a7ec8c;
+}
+.slick-prev:hover {
+    background-color:#a7ec8c;
 }
 
 /*sec04-------------------------*/
@@ -339,6 +352,7 @@ right: 0;
 .sec05 {
     margin-bottom: 60px;
 }
+
 
 /*sec06-------------------------*/
 .sec06 {
